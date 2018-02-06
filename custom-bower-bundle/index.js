@@ -1,10 +1,16 @@
 // get bpmn-js
-var BpmnViewer = require('bpmn-js/lib/Viewer');
+var BpmnViewer = require('bpmn-js/lib/Modeler');
 
 // load additional modules
+//add extra modules here
+//then Run grunt which will generate the dist file
 var additionalModules = [
-  require('diagram-js/lib/navigation/movecanvas'),
-  require('diagram-js/lib/navigation/zoomscroll')
+  require('bpmn-js-properties-panel'),
+  require('bpmn-js-properties-panel/lib/provider/bpmn'),
+  require('bpmn-js-properties-panel/lib/provider/camunda'),
+  // require('camunda-bpmn-moddle/resources/camunda')
+  // require('camunda-bpmn-moddle/resources/camunda')
+
 ];
 
 // add additional (default!) modules to bpmn-js
